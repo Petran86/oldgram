@@ -3,11 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>Oldgram</title>
   </head>
   <body>
-    <img src="./images/logo.png" alt="" />
-    <script src="index.js"></script>
+    <main>
+      <header>
+        <img src="./images/logo.png" alt="" id="app-logo" />
+        <img src="./images/unknown.png" alt="" class="my-avatar" />
+      </header>
+      <section>
+        <div class="post-content" id="post-content"></div>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
