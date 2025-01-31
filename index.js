@@ -1,12 +1,9 @@
 import { posts } from "./data.js"
 
-const postsArray = posts
 const postContent = document.getElementById("post-content")
 
-for (let post of postsArray) {
-
+for (let post of posts) {
     postContent.innerHTML += `
-    <div class="post-content">
         <div class="user-info">
             <img src=${post.avatar} alt="" class="my-avatar"/>
             <div class="user-info-text">
@@ -24,6 +21,5 @@ for (let post of postsArray) {
             <p class="bold">${post.likes} likes</p>
             <p><span class="bold">${post.username}</span> ${post.comment}</p>
         </div>
-    </div>
     `
 }
